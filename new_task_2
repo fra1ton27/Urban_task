@@ -1,0 +1,14 @@
+values_list = [40, 'Text', False]
+values_dict = {'a': 'String', 'b': 2, 'c': True}
+values_list_2 = [4, 'String_2']
+
+def print_params(a = 1, b = 'String', c = True):
+    print(a, b, c)
+
+print_params(a = 5, b = False)
+print_params()
+print_params(b = 25)
+print_params(c = [1,2,3])
+print_params(*values_list)
+print_params(**values_dict)
+print_params(*values_list_2, 42)
